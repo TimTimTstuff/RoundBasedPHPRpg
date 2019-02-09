@@ -1,0 +1,255 @@
+.fighter{
+  
+    border:solid 2px lightgray;
+    margin:5px;
+    margin-bottom: 15px;
+    padding:12px;
+    clear: both;
+}
+
+.fighter_image{
+    width: 80px;
+    height: 80px;
+    
+    float:left;
+    margin-right: 6px;
+}
+
+.active_player{
+    border-color: green;
+}
+
+.general_info{
+    font-size: 0.8em;
+    margin-bottom: 10px;
+   
+}
+
+.fighter_status>div{margin:0;}
+
+.fighter_status>div>div{
+    height: 15px;
+    font-size: small;
+    display: inline-block;
+    
+    margin: 0;
+    
+}
+
+.fighter_status{
+    width: 160px;
+    float:left;
+    margin-top:5px;
+}
+
+.fighter_status>div>span{
+
+    font-size: 0.6em;
+   
+
+    
+}
+
+.fighter_hp{
+    color:black;
+    background-color: green;
+    padding-left: 5px;
+    display: inline-block;
+}
+
+.fighter_mana{
+    color:white;
+    background-color: blue;
+    padding-left: 5px;
+    display: inline-block;
+}
+
+.status_text{
+    width: 50px;
+    display: inline-block;
+}
+
+#fight_footer{
+    background-color: #777;
+    margin: auto;
+    width: 720px;
+    border: 3px solid green;
+    padding: 10px;
+   
+    margin: auto;
+}
+#fight_footer>div{
+    border: solid thin gray;
+    display: inline-block;
+}
+
+.target{
+    border-left: solid thick red;
+}
+
+.action_item{
+    margin: 5px;
+    display: inline-block;
+    height: 59px;
+    width: 64px;
+    border: solid 2px gray;
+    font-size: 0.7em;
+    float:left;
+    cursor: pointer;
+    text-align: center;
+    padding-top:5px;
+        
+}
+
+.action_item:hover{
+    background-color: lightgray;
+}
+
+.attack_info_box{
+  background: darkslategrey;
+    border: solid thin lightgray;
+    color:white;
+    display: inline-block;
+    padding:14px;
+    z-index: 9999;
+    position: absolute;
+}
+
+#hidden_info{
+    display: none !important;
+   
+}
+
+.attack_info_box{
+    font-size: 0.8em;
+}
+
+.log_action{
+    font-size: 0.9em;
+    border-bottom: solid thin white;
+    color:lightyellow;
+    padding:5px;
+    
+}
+
+.log_action>span{
+    padding:4px;
+}
+
+.target_p{
+    color:lightcoral;
+}
+
+
+
+.actor_p{
+    color:lightblue;
+}
+
+#fight_header{
+    padding:5px;
+    color:orange;
+    font-size: 1.2em;
+}
+
+.fight_log_header{
+    background-color: gray;
+    padding: 6px;
+    border-bottom: solid 2px white;
+    
+}
+
+#fight_log{
+    border:solid thin white;
+    overflow:auto;
+    height: 90%;
+}
+
+#fight_header_box{
+    padding:5px;
+}
+
+.time_l{
+    color:wheat;
+}
+
+.fighter_index_p1{ color: #66ccff; }
+.fighter_index_p2{ color: #33ccff; }
+.fighter_index_p3{ color: #0099ff; }
+.fighter_index_p3{ color: #0066cc; }
+.fighter_index_p4{ color: #7FFF00; }
+.fighter_index_p5{ color: #0000FF; }
+.fighter_index_p7{ color: #556B2F; }
+.fighter_index_m7{ color: #1E90FF; }
+
+
+.fighter_index_m1{ color: #ff9966; }
+.fighter_index_m2{ color: #ff8c1a; }
+.fighter_index_m3{ color: #b35900; }
+.fighter_index_m4{ color: #cc6600; }
+.fighter_index_m5{ color: #FF1493; }
+.fighter_index_m6{ color: #FF69B4; }
+
+.attack_name{
+    color: lightblue;
+}
+
+.dmg{
+    color:gold;
+}
+
+.crit{
+    color:orangered;
+}
+
+.avoid{
+    color:yellowgreen;
+}
+
+.att_image{
+    float:left;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    display:block;
+  
+}
+
+.dmg_img{
+    background-image: url(../game/ui/dmg.png);
+}
+
+.avoid_image{
+     background-image: url(../game/ui/avoid.png);
+}
+
+.crit_image{
+     background-image: url(../game/ui/crit.png);
+}
+
+.heal_image{
+     background-image: url(../game/ui/heal.png);
+}
+
+
+.dot_image{
+     background-image: url(../game/ui/dot.png);
+}
+
+.hot_image{
+     background-image: url(../game/ui/hot.png);
+}
+
+.attack_activ{
+    background-color: greenyellow;
+}
+
+.attack_inactiv{
+    background-color: darkred;
+    color:red;
+}
+
+.attack{
+    background-size: cover;
+   
+}

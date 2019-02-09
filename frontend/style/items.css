@@ -1,0 +1,143 @@
+
+#char_group{
+    
+        display: none;
+ color:white;
+    width: 100%;
+    padding-left:15px;
+}
+
+#char_bag{
+   
+   
+    display: none;
+ 
+    width: 100%;
+}
+#char_sheet{
+ 
+    color:white;
+
+    display: none;
+    z-index: 8900;
+    width: 100%;
+}
+
+#quest_log{
+    color:white;
+    display: none;
+    z-index: 8900;
+    width: 100%;
+}
+#char_equip{
+
+    display: none;
+     width: 100%;
+}
+#char_image{
+    height: 500px;
+    width: 350px;
+}
+
+.stat_value{
+    color:lime;
+}
+.stats_row{
+    padding:5px;
+    border-bottom: solid thin lightgray;
+}
+
+.bag_slot, .equip_slot{
+    height: 64px;
+    width: 64px;
+    background-color: gray;
+    color:white;
+    text-align: right;
+    vertical-align: bottom;
+    font-weight: bold;
+    cursor:pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.blind_slot{
+    height: 64px;
+    width: 64px;
+   
+    color:white;
+    text-align: right;
+    vertical-align: bottom;
+    font-weight: bold;
+ 
+}
+
+.equip_slot{
+    position: relative;
+    display: inline-block;
+    float:left;
+}
+
+.selected_bag_slot{
+    background-color: limegreen !important;
+}
+
+.slot_info{
+    background: darkslategrey;
+    border: solid thin lightgray;
+    color:white;
+    display: inline-block;
+    padding:14px;
+    z-index: 9999;
+    position: absolute;
+}
+
+.stat_label{
+    width:130px;
+    display: inline-block;
+}
+
+.quest_log_item{
+    color:white;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+
+.quest_objectiv{
+    display:none;
+    font-size: smaller;
+    color:black;
+    padding-left: 12px;
+}
+
+
+.quest_log_item:hover{
+    color:darkgray;
+    cursor: pointer;
+}
+
+.rare_0{
+    color: darkgoldenrod;
+}
+
+.rare_1{
+    color:white;
+}
+
+.rare_2{
+    color: cyan;
+}
+
+.rare_3{
+    color:limegreen;
+}
+
+.rare_4{
+    color:orange;
+}
+
+.rare_5{
+    color: deeppink;
+}
+

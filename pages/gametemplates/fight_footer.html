@@ -1,0 +1,58 @@
+<div id="fight_footer"> 
+      <div id="fight_items">
+       
+        <div class="item action_item">
+            {{mana_potion}}
+        </div>
+        <div class="item action_item">
+            {{health_potion}}
+        </div>
+        
+    </div>
+    
+    <div id="fight_attack">
+        
+        <div data-slot="0" data-mana="0" style="background-image:url(frontend/game/attack/0.png)" data-content="1" class="attack action_item">
+           
+        </div>
+        <div data-slot="{{slot_1}}"  style="background-image:url(frontend/game/attack/{{attid_1}}.png)" data-content="{{c_1}}" data-mana="{{m_1}}" class="attack action_item">
+           {{attack_1}}
+        </div>
+        <div data-slot="{{slot_2}}"  style="background-image:url(frontend/game/attack/{{attid_2}}.png)" data-content="{{c_2}}" data-mana="{{m_2}}" class="attack action_item">
+           {{attack_2}}
+        </div>
+        <div data-slot="{{slot_3}}"  style="background-image:url(frontend/game/attack/{{attid_3}}.png)" data-content="{{c_3}}" data-mana="{{m_3}}" class="attack action_item">
+           {{attack_3}}
+        </div>
+        <div data-slot="{{slot_4}}"  style="background-image:url(frontend/game/attack/{{attid_4}}.png)" data-content="{{c_4}}" data-mana="{{m_4}}" class="attack action_item">
+           {{attack_4}}
+        </div>
+        <div data-slot="{{slot_5}}"  style="background-image:url(frontend/game/attack/{{attid_5}}.png)" data-content="{{c_5}}" data-mana="{{m_5}}" class="attack action_item">
+           {{attack_5}}
+        </div>
+        <div data-slot="{{slot_6}}"  style="background-image:url(frontend/game/attack/{{attid_6}}.png)" data-content="{{c_6}}" data-mana="{{m_6}}" class="attack action_item">
+           {{attack_6}}
+        </div>
+     
+    </div>  
+       <div class="attack_info_box">
+           
+        </div>
+    <div id="hidden_info">
+        <div id="info_slot_0" >
+            Standard Angriff - Mana: 0<br/>
+            Beschreibung: Ihr schlagt mit eurer Waffe oder Hand zu</br> 
+            Effekt: Verursacht schaden. 
+        </div>
+        {{attack_info}}
+    </div>
+    
+</div>
+<script src="frontend/game/scripts/game.js" type="text/javascript"></script>
+<script src="frontend/game/scripts/fight.js"></script>
+
+
+
+<script>
+    Fight();
+</script>

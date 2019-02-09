@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  
+    <head>
+        <title>Creator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script src="../frontend/scripts/jquery-3.1.1.js" type="text/javascript"></script>
+        <script src="../../frontend/scripts/admin.js" type="text/javascript"></script>
+        <link href="../../frontend/style/admin.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <style>
+            #mob_form{display:none;}
+            #item_form{display:none;}
+        </style>
+
+        
+        
+
+        <div id="item_creator">
+
+            <table id="item_form">
+                <tr>
+                    <th>Feld</th>
+                    <th>Wert</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="item_name"></td>
+                </tr>
+                <tr>
+                    <td>Beschreibung</td>
+                    <td><input type="text" name="item_description"></td>
+                </tr>
+                <tr>
+                    <td>Seltenheit</td>
+                    <td><select name="item_rarity">
+                            <option value="0">Müll</option>
+                            <option value="1">Normal</option>
+                            <option value="2">Besonders</option>
+                            <option value="3">Selten</option>
+                            <option value="4">Legendär</option>
+                            <option value="5">Einzigartig</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>Stats</td>
+                    <td>
+                        strength <input size="2" class="i" name="strength"/><br/>
+                        vitality <input size="2"  class="i" name='vitality'/><br/>
+                        speed <input size="2"  class="i" name="speed"/><br/>
+                        avoid <input size="2"  class="i" name='avoid'/><br/>
+                        crit <input size="2"  class="i" name="crit"/><br/>
+                        inteligent <input size="2"  class="i" name='inteligent'/><br/>
+                        wisdom <input size="2"  class="i" name='wisdom'/><br/>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+
+
+        <div id='mob_form'>
+            <h3>Mob Creator</h3>
+            <table>
+                <tr>
+                    <th>Feld</th>
+                    <th>Wert</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="mob_name" /></td>
+                </tr>
+                <tr>
+                    <td>Type</td>
+                    <td>
+                        <select name='mob_type'>
+                            <option value="0">Tier</option>
+                            <option value="1">Humanoid</option>
+                            <option value="2">Geist</option>
+                        </select> 
+                    </td>
+                </tr>
+            </table>
+
+            
+        </div>
+        <div>
+            <h3>item Stats</h3>
+                        strength <input size="2" class="i" name="strength"/><br/>
+                        vitality <input size="2"  class="i" name='vitality'/><br/>
+                        speed <input size="2"  class="i" name="speed"/><br/>
+                        avoid <input size="2"  class="i" name='avoid'/><br/>
+                        crit <input size="2"  class="i" name="crit"/><br/>
+                        inteligent <input size="2"  class="i" name='inteligent'/><br/>
+                        wisdom <input size="2"  class="i" name='wisdom'/><br/>
+                        armour <input size="2"  class="i" name='armour'/><br/>
+        </div>
+        <div>
+            <h3>Mob Stats</h3>
+             <div>
+                 armoreRed <input size="2" value="1" class="m" name="armoreRed"/><br/>
+                        avoid <input size="2" value="1"  class="m" name='avoid'/><br/>
+                        crit <input size="2" value="1"  class="m" name="crit"/><br/>
+                        minDmg <input size="2" value="1"  class="m" name='minDmg'/><br/>
+                        maxDmg <input size="2" value="2"  class="m" name="maxDmg"/><br/>
+                        maxHp <input size="2" value="10"  class="m" name='maxHp'/><br/>
+                        maxMana <input size="2" value="1"  class="m" name='maxMana'/><br/>
+                        speed <input size="2" value="1"  class="m" name='speed'/><br/>
+        </div>
+        </div>
+        <div>
+            <textarea id='output' cols="22" rows="7">
+                
+            </textarea>
+        </div>
+        <script>
+            
+             $(".m").change((e)=>{
+              
+        var obj = {};
+        $(".m").each((i,et)=>{
+                    
+                   
+                        obj[$(et).attr("name")] = $(et).val();
+                   
+                    
+                });
+                
+                $("#output").text(JSON.stringify(obj));
+            });
+            
+            
+            
+            $(".i").change((e)=>{
+            
+        var obj = {};
+        $(".i").each((i,et)=>{
+                    
+                    if($(et).val() > 0){
+                        obj[$(et).attr("name")] = $(et).val();
+                    }
+                    
+                });
+                
+                $("#output").text(JSON.stringify(obj));
+            });
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,162 @@
+@import "items.css";
+@import "npc.css";
+@import "world.css";
+@import "fight.css";
+
+
+body{margin:0;
+     font-family: 'Medula One', cursive;
+font-family: 'MedievalSharp';
+font-family: 'Itim', cursive;
+font-family: 'Inknut Antiqua';
+font-size: 1.0em;
+line-height: 1.0em;
+}
+#register_window{
+    display:none;
+}
+
+#head{
+    height: 7%;
+    background-color: bisque;
+    border-bottom: solid thin lightgray;
+}
+
+#play{
+    height: 78%;
+    background-color: #666;
+    margin:0;
+    padding:0;
+    width: 100%;
+}
+
+#footer{
+    height: 14%;
+    background-color: bisque;
+    border-top: solid thin lightgray;
+}
+#footer_buttons{
+    margin:20px;
+}
+
+.footer_button_64{
+    float:right;
+    height: 64px;
+    width: 64px; 
+    background-color: lightslategray;
+    border: solid thin gray;
+    margin:4px;
+    cursor: pointer;
+}
+
+#char_info{
+    border: solid 1px lightslategrey;
+    color: white;
+    background-color: darkslategray;
+    font-family: arial;
+    display: inline-block;
+    height: 100%;
+    overflow: auto;
+    float:right;
+}
+
+.info_element{
+    display: block;
+    margin:3px;
+  
+    font-size: 0.7em;
+    display: inline-block;
+}
+
+.info_label{
+    font-weight: bold;
+}
+
+.info_data{
+    
+}
+
+.maincolum{
+    float:left;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow:auto;
+    
+}
+
+#leftcol{
+   width: 25%;
+   max-width: 25%;
+}
+
+#rightcol{
+   width: 25%;
+      max-width: 25%;
+      background-color: #666;
+}
+
+#centercol{
+    width: 49%;
+    max-width: 49%;
+   
+}
+
+.innerrow{
+    height: 50%;
+    width: 100%;
+   
+}
+
+#chat{
+    background-color: darkslategray;
+    color:white;
+   
+}
+
+#chat_input>input{
+    width: 100%;
+    color:white;
+    background-color: darkslategray;
+}
+
+#chat_output{
+    height: 90%;
+    overflow: auto;
+    font-size: 0.9em;
+    font-family: segoe ui;
+}
+    #maptable{
+        height: 75%;
+         background-image: url(../game/maps/1.png);
+        background-size: cover;
+    }
+    #chat{
+        height:24.5%;
+    }
+   #maptable> table{
+        width: 100%;
+        height: 100%;
+        border-collapse: collapse;
+       table-layout: fixed;
+    }
+    td{
+      
+      width: 16.5%;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.9em;
+    }
+    
+    .action{
+        background-color: rgba(120,120,120,0.5);
+        cursor: pointer;
+        
+    }
+    
+    .action:hover{
+         background-color: rgba(120,120,120,0.7);
+    }
+    .light_chat{
+        background-color: darkslateblue;
+    }

@@ -1,0 +1,25 @@
+table{
+    margin-left: 10px;
+    
+}
+
+td{
+    border-bottom: solid thin gray;
+    padding:3px;
+}
+
+#builder>div{
+    border:solid thin gray;
+    padding: 5px;
+    margin-bottom:3px;
+}
+
+#lookup{
+    background-color: darkslategray;
+    width: 250px;
+    top:60px;
+    left:500px;
+    position:absolute;
+    color:white;
+    
+}

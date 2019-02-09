@@ -1,0 +1,137 @@
+#npc_frame{
+height: 99.6%;
+ width: 97%;
+     background-color: #777;
+    display: inline-block;
+    border-left: solid thick lightgray;
+    border-right: solid thick lightgray;
+   
+}
+
+#npc_image, #npc_text{
+    display: block;
+    height: 125px;
+    
+    
+}
+
+#npc_image{
+    display: block;
+}
+
+#npc_image>img{
+    height: 125px;
+    width: 125px;
+}
+
+#npc_image{
+  width: 125px;
+  float:left;
+  margin-left: -10px;
+}
+
+#npc_text{
+    
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 30px;
+    min-height: 250;
+    background-image: url(../game/ui/per_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    vertical-align: middle;
+    overflow: auto;
+    
+}
+
+.vendor_slot, .equip_slot{
+    height: 64px;
+    width: 64px;
+    background-color: gray;
+    color:white;
+    text-align: right;
+    vertical-align: bottom;
+    font-weight: bold;
+    cursor:pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#quest_window{
+  
+    background-color: #8B4513;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.questlist ul{
+    list-style-type: none;
+}
+
+.quest_item{
+    color:whitesmoke;
+    text-decoration: none ;
+    cursor: pointer;
+    padding:5px;
+}
+
+.quest_item:hover{
+        color:lightgray;
+    text-decoration: none;
+    
+}
+
+.quest_marker{
+   
+    color:gold;
+}
+
+.quest{
+    padding:8px;
+    color:white;
+}
+
+#allquests>div{
+    display:none;
+}
+
+.quest_decision{
+  
+    color:white;
+}
+.quest_decision>a{
+
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.quest_decision>a:hover{
+    color:lightgray;
+    text-decoration: none;
+}
+
+.decline{
+    padding: 4px;
+    color:lightcoral;
+}
+
+.accept{
+    padding:4px;
+    color:lightgreen;
+}
+
+.buy_element{
+    font-size: 0.5em;
+    color:white;
+    border-bottom: solid thin white;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.buy_stat{
+    cursor: pointer;
+    color:greenyellow;
+  
+    margin-right: 5px;
+}
