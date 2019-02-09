@@ -3,6 +3,6 @@
 $CONFIGURATION = [
     "server"=>"localhost",
     "user"=>"root",
-    "password"=>"root",
+    "password"=>"",
     "database"=>"tstuff_game"
 ];

@@ -136,7 +136,7 @@ class Equip extends Item {
         $this->extData = R::findOne(DBTables::ITEM_EQUIP, "item_id = ?", [$this->itemId]);
     }
 
-    public static function createNewItem($name, $description, $rarity, $stats, $sellprice, $equipType, $material, $waponType,$minLevel,$imagekey) {
+    public static function createNewEquip($name, $description, $rarity, $stats, $sellprice, $equipType, $material, $waponType,$minLevel,$imagekey) {
         $type = TypeOfItem::Equip;
         $stackSize = 1;
         $item = parent::createNewItem($name, $description, $rarity, $stats, $type, $stackSize, $sellprice,$imagekey);
